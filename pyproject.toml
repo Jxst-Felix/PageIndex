@@ -1,0 +1,25 @@
+[project]
+name = "pageindex"
+description = "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG"
+authors = [ 
+    {name = "Felix Leo Flores", email = "floresfelixleo.fleurs96@gmail.com"}
+]
+readme = "README.md"
+license = {text = MIT"}
+requires-python = ">=3.10"
+dynamic = ["dependencies", "version"]
+
+[project.urls]
+Repository = "https://github.com/Jxst-Felix/PageIndex" 
+Issues = "https://github.com/Jxst-Felix/PageIndex/issues"
+
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["pageindex"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+version = { attr = "pageindex.__version__" }
