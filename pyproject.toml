@@ -5,7 +5,7 @@ authors = [
     {name = "Felix Leo Flores", email = "floresfelixleo.fleurs96@gmail.com"}
 ]
 readme = "README.md"
-license = {text = MIT"}
+license = {text = "MIT"}
 requires-python = ">=3.10"
 dynamic = ["dependencies", "version"]
 
